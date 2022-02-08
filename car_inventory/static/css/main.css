@@ -1,0 +1,202 @@
+.ct-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 24);
+
+}
+
+/* Target Main logo */
+.ct-nav img{
+    width: 15%;
+    min-width: 15%;
+    max-width: 100%;
+    margin: 4vw;
+    margin-bottom: 1.5vw;
+    margin-top: 2vw;
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 10%;
+    font-size: 100%;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5 vw;
+    color: white;
+    margin-right: 1.3em;
+    font-weight: 600;
+
+}
+
+ul#horizontal-list li, ul#horizontal-list a::before{
+    content:'';
+    width:0%;
+    height:3px;
+    display:block;
+    background-color: #fff;
+    margin-top:10px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a:hover::before{
+    width:100%;
+    transition:all .5s;
+}
+/* end of navbar */
+
+button{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+body{
+    background-color: black;
+}
+
+/* Start of Hero/Header Section */
+
+header{
+    padding-top: 10%;
+}
+
+#big-img{
+    max-width: 100%;
+}
+
+#car-select{
+    font-size: 620%;
+    font-style:oblique;
+    font: bold;
+    /* font-weight: 800; */
+    padding-bottom: 0.3em;
+}
+
+#header-text{
+    padding: 2vw;
+    color: white;
+}
+
+.header-image{
+    width: 82%;
+    max-width: 100%;
+}
+
+/* end of hero/header section */
+
+/* Start of Middle Section Styles */
+#middle-text{
+    text-align: center;
+    padding: 7vh;
+    color:white;
+    background-color:rgba(49, 49, 49, 0.7);
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+#middle-text h2{
+    padding: 1.5vw;
+}
+
+/* end of middle section */
+
+/* start of features section styles */
+
+#car-illustration1, #car-illustration2, #car-illustration3{
+    margin-bottom: 3vw;
+    max-width: 100%;
+}
+
+#features-section{
+    margin: 1vw;
+    padding-bottom: 5vw;
+    color: #fff;
+    justify-content:center;
+
+}
+
+#features-section h1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#features-section h4{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: left;
+}
+
+#features-section p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: left;
+}
+/* end of features section */
+
+/* start of community section */
+
+
+#community-img{
+    max-width: 100%;
+}
+
+/* end of the community section */
+
+/* footer section */
+
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3 vw;
+    color: #fff;
+}
+
+#logo-img{
+    width: 100%;
+    max-width:60%;
+    margin-top: 20px;
+    margin: 2em;
+}
+
+#footer{
+    border-top: 3px solid white;
+    margin-top: 15vh;
+    color:#fff;
+}
+
+.footer-text-flex{
+    margin-top: 2em;
+}
+
+.col-12{
+    color: white;
+}
+.col-8{
+    color: white;
+    padding-top: 2em;
+    margin-left: 1em;
+    text-align: center;
+}
+/* profile styles */
+
+.hero-section{
+    height:95vh;
+    background-image: linear-gradient(to right bottom, rgba(30, 115, 172, 0.7), rgba(142, 57, 153, 0.6)), url(../images/drone-profile.jpg);
+    background-size: cover;
+    background-position: 35% 50%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0,100% 0, 100% 80vh, 0 100%);
+    position: relative;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    left: 20rem;
+    top: 10rem;
+    color: white;
+}
