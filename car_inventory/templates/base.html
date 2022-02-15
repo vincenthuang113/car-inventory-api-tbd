@@ -20,21 +20,35 @@
         <!-- Nav items -->
         <div>
             <ul id="horizontal-list">
-                <a href="{{ url_for('site.home') }}">
+                <a href="{{ url_for('site.home') }}" class="nav-front">
                     <li>HOME</li>
                 </a>
-                <a href="{{ url_for('site.aboutus') }}">
+                <a href="{{ url_for('site.aboutus') }}" class="nav-front">
                     <li>ABOUT US</li>
                 </a>
-                <a href="{{ url_for('site.gallery') }}">
+                <a href="{{ url_for('site.gallery') }}" class="nav-front">
                     <li>GALLERY</li>
                 </a>
-                <a href="{{ url_for('auth.signin') }}">
-                    <li>SIGN IN</li>
-                </a>
-                <a href="{{ url_for('auth.signup') }}">
+                <a href="{{ url_for('auth.signup') }}" class="nav-front">
                     <li>SIGN UP</li>
                 </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ACCOUNT
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="nav-prof" >
+                        <a class="dropdown-item" href="{{ url_for('site.profile') }}">PROFILE</a>
+                    </li>
+                    {% if current_user.is_authenticated %}
+                    <li class="nav-prof">
+                        <a class="dropdown-item" href="{{ url_for('auth.logout') }}">LOG OUT</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-prof">
+                        <a class="dropdown-item" href="{{ url_for('auth.signin') }}">SIGN IN</a>
+                    </li>
+                    {% endif %}
+                </ul>
             </ul>
         </div>
     </nav>

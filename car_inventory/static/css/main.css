@@ -9,7 +9,7 @@
 .ct-nav img{
     width: 15%;
     min-width: 15%;
-    max-width: 100%;
+    max-width: 80%;
     margin: 4vw;
     margin-bottom: 1.5vw;
     margin-top: 2vw;
@@ -22,7 +22,9 @@ ul#horizontal-list{
     font-size: 100%;
 }
 
-ul#horizontal-list li, ul#horizontal-list a{
+
+
+ul#horizontal-list a{
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -33,7 +35,7 @@ ul#horizontal-list li, ul#horizontal-list a{
 
 }
 
-ul#horizontal-list li, ul#horizontal-list a::before{
+.nav-front::before{
     content:'';
     width:0%;
     height:3px;
@@ -42,10 +44,15 @@ ul#horizontal-list li, ul#horizontal-list a::before{
     margin-top:10px;
 }
 
-ul#horizontal-list li, ul#horizontal-list a:hover::before{
+.nav-front:hover::before{
     width:100%;
     transition:all .5s;
 }
+
+.dropdown-menu{
+    background-color: rgb(49, 49, 49);
+}
+
 /* end of navbar */
 
 button{
